@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f8d7aa7-0f4b-4be5-aece-672fc01f84ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/gamePackage/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/gamePackage/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/gamePackage/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/gamePackage/Network.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="28ncGbtBOv1uhPaMusrJirOra2L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f8d7aa7-0f4b-4be5-aece-672fc01f84ca" name="Default Changelist" comment="" />
+      <created>1651855695118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651855695118</updated>
+      <workItem from="1651855701201" duration="54000" />
+      <workItem from="1651855787829" duration="276000" />
+      <workItem from="1651856123193" duration="8000" />
+      <workItem from="1651857802925" duration="1051000" />
+      <workItem from="1651858879911" duration="335000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1854" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1651858989991">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1854" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1651858989991" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1651856040001">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1651856040001" />
+  </component>
+</project>
