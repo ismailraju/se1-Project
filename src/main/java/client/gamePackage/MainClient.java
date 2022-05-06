@@ -77,7 +77,7 @@ public class MainClient {
         // individual endpoint
         // TIP: create it once in the CTOR of your network class and subsequently use it
         // in each communication method
-        WebClient baseWebClient = my methodName(serverBaseUrl);
+        WebClient baseWebClient = Network.getBaseWebClient(serverBaseUrl);
         //	.defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_XML_VALUE) // the network protocol uses
         // XML
         //	.defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_XML_VALUE).build();

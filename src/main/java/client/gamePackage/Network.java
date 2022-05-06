@@ -34,15 +34,22 @@ public class Network {
 //																						// XML
 //			.defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_XML_VALUE).build();
 
-    WebClient baseWebClient;
+    static WebClient baseWebClient = null;
 
-    public Network() {
-        baseWebClient = WebClient.builder().baseUrl(serverBaseUrl + "/games")
-                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_XML_VALUE) // the network protocol uses
-                // XML
-                .defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_XML_VALUE).build();
-
+    public static WebClient getBaseWebClient(String serverBaseUrl) {
+        if (baseWebClient == null) {
+            baseWebClient = WebClient.builder().baseUrl(serverBaseUrl + "/games")
+                    .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_XML_VALUE)
+                    .defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_XML_VALUE).build();
+        }
+        return baseWebClient;
     }
+
+    public static void setBaseWebClient(WebClient baseWebClient) {
+        Network.baseWebClient = baseWebClient;
+    }
+
+
 
     /*
      * Note, EACH client must only register a SINGLE player (i.e., you) ONCE! It is
