@@ -1,4 +1,4 @@
-package client.gamePackage;
+package client.gameLogic;
 
 public class PlayerID {
 	private String iD;

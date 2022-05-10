@@ -1,8 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1f8d7aa7-0f4b-4be5-aece-672fc01f84ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/controller/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/controller/ResultsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/gamePackage/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/GameModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/RegistrationModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/ResultsModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/view/GameView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/view/RegistrationView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/view/ResultsView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/client/gamePackage/MainClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/client/gamePackage/MainClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/client/gamePackage/Network.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/client/gamePackage/Network.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/gamePackage/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/gamePackage/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/gamePackage/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/gamePackage/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/gamePackage/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/gamePackage/Network.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +68,20 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="28ncGbtBOv1uhPaMusrJirOra2L" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,7 +92,80 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.27471265" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="client.gamePackage" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainClient">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.gamePackage.Main" />
+      <module name="ExampleClient.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.gamePackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="client.gamePackage.MainClient" />
+      <module name="ExampleClient.main" />
+      <option name="PROGRAM_PARAMETERS" value="TR http://swe1.wst.univie.ac.at:18235/ RuNsq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.gamePackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests in 'ExampleClient'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainClient" />
+      <item itemvalue="Gradle.Tests in 'ExampleClient'" />
+      <item itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainClient" />
+        <item itemvalue="Gradle.Tests in 'ExampleClient'" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -58,21 +181,96 @@
       <workItem from="1651855787829" duration="276000" />
       <workItem from="1651856123193" duration="8000" />
       <workItem from="1651857802925" duration="1051000" />
-      <workItem from="1651858879911" duration="335000" />
+      <workItem from="1651858879911" duration="558000" />
+      <workItem from="1651901414917" duration="2520000" />
+      <workItem from="1652107692336" duration="92000" />
+      <workItem from="1652191664421" duration="6243000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1854" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1651858989991">
+    <state x="1636" y="0" key="#Project_Structure" timestamp="1652192977547">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1854" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1651858989991" />
+    <state x="1636" y="0" key="#Project_Structure/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652192977547" />
+    <state x="1503" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652196121086">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1503" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652196121086" />
+    <state x="1854" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1652194760868">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1854" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652194760868" />
+    <state x="505" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1652197798859">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="505" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1652197798859" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1651856040001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1651856040001" />
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1652195909332">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909332" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1652195909332">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909332" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1652195909331">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909331" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1652195909332">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909332" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1652195909007">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909007" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1652195909007">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909007" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1652195909007">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909007" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1652195909007">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909007" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/client/gamePackage/MainClient.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/client/gamePackage/Main.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

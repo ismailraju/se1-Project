@@ -1,4 +1,4 @@
-package client.gamePackage;
+package client.gameLogic;
 
 import java.util.Optional;
 
@@ -33,6 +33,12 @@ public class Network {
 //			.defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_XML_VALUE) // the network protocol uses
 //																						// XML
 //			.defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_XML_VALUE).build();
+
+    public Network(String serverBaseUrl, String gameId) {
+        this.gameId = gameId;
+        this.serverBaseUrl = serverBaseUrl;
+        getBaseWebClient(this.serverBaseUrl);
+    }
 
     static WebClient baseWebClient = null;
 
@@ -71,10 +77,7 @@ public class Network {
 //	---------------------------------
 
     public GameID createGame(String url) {
-        baseWebClient = WebClient.builder().baseUrl(url + "/games")
-                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_XML_VALUE) // the network protocol uses
-                // XML
-                .defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_XML_VALUE).build();
+
 
         Mono<ResponseEnvelope> webAccess = baseWebClient.method(HttpMethod.GET)
                 .uri("/")
@@ -90,12 +93,6 @@ public class Network {
     }
 
     public Player registerPlayer(GameID gameID, String name, String surname, String uaccount, String url) {
-
-
-        baseWebClient = WebClient.builder().baseUrl(url + "/games")
-                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_XML_VALUE) // the network protocol uses
-                // XML
-                .defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_XML_VALUE).build();
 
         PlayerRegistration playerReg = new PlayerRegistration(name, surname, uaccount);
         Mono<ResponseEnvelope> webAccess = baseWebClient.method(HttpMethod.POST).uri("/" + gameID.getiD() + "/players")
@@ -121,11 +118,6 @@ public class Network {
     }
 
     public GameState getGameState(GameID gameID, PlayerID playerID, String url) {
-
-        WebClient baseWebClient = WebClient.builder().baseUrl(url + "/games")
-                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_XML_VALUE) // the network protocol uses
-                // XML
-                .defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_XML_VALUE).build();
 
         Mono<ResponseEnvelope> webAccess = baseWebClient.method(HttpMethod.GET)
                 .uri("/" + gameID.getiD() + "/states/" + playerID.getiD())

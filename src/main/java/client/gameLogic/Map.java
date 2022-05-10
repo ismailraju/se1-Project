@@ -1,4 +1,4 @@
-package client.gamePackage;
+package client.gameLogic;
 
 import java.util.Set;
 
@@ -50,9 +50,9 @@ public class Map {
 
 //	public generateMap ()
 //	{
-//		
-//		
-//		
+//
+//
+//
 //	}
 
 }

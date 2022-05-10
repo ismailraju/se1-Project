@@ -1,4 +1,4 @@
-package client.gamePackage;
+package client.gameLogic;
 
 import java.util.Objects;
 
