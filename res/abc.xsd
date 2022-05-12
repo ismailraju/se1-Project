@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xs:schema [
+        <!ELEMENT xs:schema (xs:element|xs:simpleType)*>
+        <!ATTLIST xs:schema
+                xmlns:xs CDATA #REQUIRED>
+        <!ELEMENT xs:element (xs:complexType)*>
+        <!ATTLIST xs:element
+                maxoccurs CDATA #IMPLIED
+                minOccurs CDATA #IMPLIED
+                name CDATA #REQUIRED
+                type CDATA #IMPLIED>
+        <!ELEMENT xs:complexType (xs:sequence)*>
+        <!ELEMENT xs:sequence (xs:element|)*>
+        <!ELEMENT xs:simpleType (xs:)*>
+        <!ATTLIST xs:simpleType
+                name CDATA #REQUIRED>
+        <!ELEMENT xs: (xs:enumeration|)*>
+        <!ATTLIST xs:
+                restriction CDATA #REQUIRED
+                base CDATA #REQUIRED>
+        <!ELEMENT xs:enumeration (#PCDATA)>
+        <!ATTLIST xs:enumeration
+                value CDATA #REQUIRED>
+        ]>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="responseEnvelope">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="exceptionName" type="xs:string"minOccurs="1"maxoccurs="1" /> <
+                    xs:element name="exceptionMessage" type="xs:string"minOccurs="1"maxoccurs="1" /> <
+                    xs:element name="state" type="statevalues"minOccurs="1"maxoccurs="1" /> </
+                    xs:sequence>
+        </xs:complexType>
+    </xs:item>
+    <xs:simpleType name="state values">
+        <xs: restriction base="xs:string">
+            <xs:enumeration value="okay" /> <
+                xs:enumeration value="Error" /> </
+                xs:restriction>
+    </xs:simpleType>
+</xs:schema>

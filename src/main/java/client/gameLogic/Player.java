@@ -43,8 +43,16 @@ public class Player {
 	public PlayerType getPlayerType() {
 		return playerType;
 	}
-	
-	
-	
-	
+
+
+	@Override
+	public String toString() {
+		return "Player{" +
+				"name='" + name + '\'' +
+				", surname='" + surname + '\'' +
+				", uaccount='" + uaccount + '\'' +
+				", playerId=" + playerId.getiD() +
+				", playerType=" + playerType +
+				'}';
+	}
 }

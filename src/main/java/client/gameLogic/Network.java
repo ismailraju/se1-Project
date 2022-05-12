@@ -2,6 +2,8 @@ package client.gameLogic;
 
 import java.util.Optional;
 
+import MessagesBase.MessagesFromServer.GameState;
+import MessagesBase.UniquePlayerIdentifier;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
@@ -9,9 +11,10 @@ import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import MessagesBase.ResponseEnvelope;
+import MessagesBase.MessagesFromClient.*;
 import MessagesBase.MessagesFromClient.ERequestState;
 import MessagesBase.MessagesFromClient.PlayerRegistration;
-import MessagesBase.MessagesFromServer.GameState;
+import MessagesBase.MessagesFromServer.*;
 import reactor.core.publisher.Mono;
 
 public class Network {
@@ -99,21 +102,56 @@ public class Network {
                 .body(BodyInserters.fromValue(playerReg)) // specify the data which is sent to the server
                 .retrieve().bodyToMono(ResponseEnvelope.class); // specify the object returned by the server
 
-        ResponseEnvelope<Player> requestResult = webAccess.block();
+        ResponseEnvelope<UniquePlayerIdentifier> requestResult = webAccess.block();
 
 
         if (requestResult.getState() == ERequestState.Error) {
             System.err.println("Client error, errormessage: " + requestResult.getExceptionMessage());
         }
-        Optional<Player> pp = requestResult.getData();
-        return pp.isPresent() ? pp.get() : null;
+
+
+        Optional<UniquePlayerIdentifier> pp = requestResult.getData();
+
+
+        Player player = new Player(name, surname, uaccount, new PlayerID(pp.isPresent() ? pp.get().getUniquePlayerID() : null));
+        System.out.println("Player (after registration):" + player.toString());
+
+        return player;
+
     }
 
     public void sendHalfMap(PlayerID playerID, Map map, String url) {
 
+
+        Mono<ResponseEnvelope> webAccess = baseWebClient.method(HttpMethod.POST).uri("/" + gameId + "/halfmaps")
+                .body(BodyInserters.fromValue(map)) // specify the data which is sent to the server
+                .retrieve().bodyToMono(ResponseEnvelope.class); // specify the object returned by the server
+
+        ResponseEnvelope<Map> requestResult = webAccess.block();
+
+
+        if (requestResult.getState() == ERequestState.Error) {
+            System.err.println("Client error, errormessage: " + requestResult.getExceptionMessage());
+        }
+
+
     }
 
     public void sendMove(PlayerID playerID, Move move, String url) {
+        PlayerMove playerMove = PlayerMove.of(new UniquePlayerIdentifier(playerID.getiD()), EMove.valueOf(move.name()));
+
+
+        Mono<ResponseEnvelope> webAccess = baseWebClient.method(HttpMethod.POST).uri("/" + gameId + "/moves")
+                .body(BodyInserters.fromValue(playerMove)) // specify the data which is sent to the server
+                .retrieve().bodyToMono(ResponseEnvelope.class); // specify the object returned by the server
+
+        ResponseEnvelope<Map> requestResult = webAccess.block();
+
+
+        if (requestResult.getState() == ERequestState.Error) {
+            System.err.println("Client error, errormessage: " + requestResult.getExceptionMessage());
+        }
+
 
     }
 
@@ -123,14 +161,16 @@ public class Network {
                 .uri("/" + gameID.getiD() + "/states/" + playerID.getiD())
                 .retrieve().bodyToMono(ResponseEnvelope.class);
 
-        ResponseEnvelope<GameState> requestResult = webAccess.block();
+        ResponseEnvelope<MessagesBase.MessagesFromServer.GameState> requestResult = webAccess.block();
 
         if (requestResult.getState() == ERequestState.Error) {
             System.err.println("Client error, errormessage: " + requestResult.getExceptionMessage());
         }
 
-        Optional<GameState> pp = requestResult.getData();
-        return pp.isPresent() ? pp.get() : null;
+        Optional<MessagesBase.MessagesFromServer.GameState> pp = requestResult.getData();
+        GameState gameState = pp.isPresent() ? pp.get() : null;
+        System.out.println("GameState  :" + gameState );
+        return gameState;
     }
 
 }
