@@ -71,6 +71,10 @@ public class Main {
 
             state = getePlayerGameState(network);
         }
+        
+        
+        state = getePlayerGameState(network);
+        System.out.println("Final result: "+state);
 
 
     }

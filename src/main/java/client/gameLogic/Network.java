@@ -1,9 +1,11 @@
 package client.gameLogic;
 
+import java.util.Collection;
 import java.util.Optional;
 
 import MessagesBase.MessagesFromServer.GameState;
 import MessagesBase.UniquePlayerIdentifier;
+import com.google.gson.Gson;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
@@ -12,8 +14,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 import MessagesBase.ResponseEnvelope;
 import MessagesBase.MessagesFromClient.*;
-import MessagesBase.MessagesFromClient.ERequestState;
-import MessagesBase.MessagesFromClient.PlayerRegistration;
 import MessagesBase.MessagesFromServer.*;
 import reactor.core.publisher.Mono;
 
@@ -123,8 +123,11 @@ public class Network {
     public void sendHalfMap(PlayerID playerID, Map map, String url) {
 
 
+    	
+    	HalfMap hp=new HalfMap(playerID.getiD() ,Map.generateHalfMap());
+    	 
         Mono<ResponseEnvelope> webAccess = baseWebClient.method(HttpMethod.POST).uri("/" + gameId + "/halfmaps")
-                .body(BodyInserters.fromValue(map)) // specify the data which is sent to the server
+                .body(BodyInserters.fromValue(hp)) // specify the data which is sent to the server
                 .retrieve().bodyToMono(ResponseEnvelope.class); // specify the object returned by the server
 
         ResponseEnvelope<Map> requestResult = webAccess.block();
@@ -169,7 +172,8 @@ public class Network {
 
         Optional<MessagesBase.MessagesFromServer.GameState> pp = requestResult.getData();
         GameState gameState = pp.isPresent() ? pp.get() : null;
-        System.out.println("GameState  :" + gameState );
+        Gson g=new Gson();
+        System.out.println("GameState  :" +g.toJson(gameState)  );
         return gameState;
     }
 
