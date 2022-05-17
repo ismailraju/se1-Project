@@ -1,9 +1,15 @@
 package client.gameLogic;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
 
 import MessagesBase.MessagesFromServer.GameState;
+import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
 import MessagesBase.UniquePlayerIdentifier;
 import com.google.gson.Gson;
 import org.springframework.http.HttpHeaders;
@@ -120,12 +126,12 @@ public class Network {
 
     }
 
-    public void sendHalfMap(PlayerID playerID, Map map, String url) {
+    public void sendHalfMap(PlayerID playerID, Map map, String url, Stage primaryStage) {
 
+        List<HalfMapNode> halfMapNodes = Map.generateHalfMap();
+        fx(halfMapNodes, primaryStage);
+        HalfMap hp = new HalfMap(playerID.getiD(), halfMapNodes);
 
-    	
-    	HalfMap hp=new HalfMap(playerID.getiD() ,Map.generateHalfMap());
-    	 
         Mono<ResponseEnvelope> webAccess = baseWebClient.method(HttpMethod.POST).uri("/" + gameId + "/halfmaps")
                 .body(BodyInserters.fromValue(hp)) // specify the data which is sent to the server
                 .retrieve().bodyToMono(ResponseEnvelope.class); // specify the object returned by the server
@@ -137,6 +143,48 @@ public class Network {
             System.err.println("Client error, errormessage: " + requestResult.getExceptionMessage());
         }
 
+
+    }
+
+    public void fx(List<HalfMapNode> halfMapNodes, Stage primaryStage) {
+        // Create a GridPane
+        GridPane pane = new GridPane();
+
+        // Create 64 rectangles and add to pane
+        int count = 0;
+        double s = 50; // side of rectangle
+//	    for (int i = 0; i < 8; i++) {
+//	      count++;
+//	      for (int j = 0; j < 8; j++) {
+//	        Rectangle r = new Rectangle(s, s, s, s);
+//	        if (count % 2 == 0)
+//	          r.setFill(Color.WHITE);
+//	        pane.add(r, j, i);
+//	        count++;
+//	      }
+//	    }
+
+        for (HalfMapNode n : halfMapNodes) {
+            Rectangle r = new Rectangle(s, s, s, s);
+            switch (n.getTerrain()) {
+                case Grass:
+                    r.setFill(Color.GREEN);
+                    break;
+                case Mountain:
+                    r.setFill(Color.GRAY);
+                    break;
+                case Water:
+                    r.setFill(Color.BLUE);
+                    break;
+            }
+
+            pane.add(r, n.getX()-1,n.getY()-1);
+        }
+        // Create a scene and place it in the stage
+        Scene scene = new Scene(pane);
+        primaryStage.setTitle("fiverr");
+        primaryStage.setScene(scene); // Place in scene in the stage
+        primaryStage.show();
 
     }
 
@@ -172,8 +220,8 @@ public class Network {
 
         Optional<MessagesBase.MessagesFromServer.GameState> pp = requestResult.getData();
         GameState gameState = pp.isPresent() ? pp.get() : null;
-        Gson g=new Gson();
-        System.out.println("GameState  :" +g.toJson(gameState)  );
+        Gson g = new Gson();
+        System.out.println("GameState  :" + g.toJson(gameState));
         return gameState;
     }
 

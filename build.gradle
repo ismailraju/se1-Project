@@ -1,3 +1,5 @@
+ 
+
 //downloads libraries directly from a webserver - we use this for the provided network messag implementation
 def urlFile = { url, name ->
     File file = new File("$buildDir/download/${name}.jar")
@@ -12,23 +14,34 @@ def urlFile = { url, name ->
     files(file.absolutePath)
 }
 
+
+
 //integrates spring, gives source for libraries
 buildscript {
  	ext {
         springBootVersion = '2.5.5'
     }
     repositories {
-        mavenCentral()
+       mavenLocal()
+       mavenCentral()
+        maven {
+      	url = uri("https://plugins.gradle.org/m2/")
+    	}
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.openjfx:javafx-plugin:0.0.13")
     }
 }
+
 
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
+apply plugin: 'org.springframework.boot'  
+apply plugin: 'application'
+apply plugin: 'org.openjfx.javafxplugin'  
+
 
 //ensures that the res folder (with the logback config) is recognized correctly
 sourceSets {
@@ -46,8 +59,13 @@ test {
 }
 
 // In this section you declare where to find the dependencies of your project
-repositories {
+repositories { 
     mavenCentral()
+}
+
+javafx {
+ 	version = '13'
+    modules = [ 'javafx.controls', 'javafx.fxml','javafx.graphics']
 }
 
 //specifies the expected java versions
@@ -66,6 +84,8 @@ bootJar {
         )
     }
 }
+
+ 
 
 dependencies {
 
@@ -114,16 +134,16 @@ dependencies {
 // https://mvnrepository.com/artifact/com.google.code.gson/gson
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.7'
     
+    implementation 'org.openjfx:javafx:13'
     
-    // here starts JavaFX
-    implementation 'org.openjfx:javafx:14'
+    implementation 'net.rgielen:javafx-weaver-spring-boot-starter:1.3.0'
+    implementation 'org.openjfx:javafx-graphics:17.0.0.1:win'
+  	implementation 'org.openjfx:javafx-base:17.0.0.1:win'
+  	implementation 'org.openjfx:javafx-controls:17.0.0.1:win'
 
-    compile 'org.openjfx:javafx-base:14'
-    compile 'org.openjfx:javafx-graphics:14'
-    compile 'org.openjfx:javafx-controls:14'
-    compile 'org.openjfx:javafx-fxml:14'
-    compile 'org.openjfx:javafx-swing:14'
-    compile 'org.openjfx:javafx-media:14'
-    compile 'org.openjfx:javafx-web:14'
-
+    
+    
+ 
 }
+
+

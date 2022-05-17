@@ -23,18 +23,32 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/main/client/gameLogic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/client/gameLogic/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/main/client/gameLogic/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/client/gameLogic/Map.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/main/client/gameLogic/Network.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/client/gameLogic/Network.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/download/swe_messages_2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/download/swe_messages_3.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/download/swe_messages_3.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/download/swe_messages_3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/gameLogic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/gameLogic/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/gameLogic/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/gameLogic/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/gameLogic/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/gameLogic/Network.java" afterDir="false" />
@@ -52,9 +66,22 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExampleClient" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExampleClient" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -85,7 +112,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Matrix_REST/Matrix_REST/grpc-server" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27471265" />
@@ -99,7 +126,7 @@
       <recent name="client.gamePackage" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.Tests in 'ExampleClient'">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.gameLogic.Main" />
       <module name="ExampleClient.main" />
@@ -156,9 +183,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'ExampleClient'" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainClient" />
-        <item itemvalue="Gradle.Tests in 'ExampleClient'" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +209,9 @@
       <workItem from="1652191664421" duration="6894000" />
       <workItem from="1652277239486" duration="7797000" />
       <workItem from="1652362051365" duration="5832000" />
+      <workItem from="1652594048521" duration="227000" />
+      <workItem from="1652798844954" duration="99000" />
+      <workItem from="1652800908605" duration="1027000" />
     </task>
     <servers />
   </component>
@@ -236,30 +266,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="461" y="272" width="444" height="221" key="#com.intellij.ws.xml.xmlbeans.GenerateJavaFromXmlBeansSchemasDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1652278573951" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1652278564588">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1652594275009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1652278564588" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1652329538378">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1652594275009" />
+    <state width="1323" height="570" key="GridCell.Tab.0.bottom" timestamp="1652802035497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1652329538378" />
     <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909332" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1652329538378">
+    <state width="1323" height="570" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1652802035497" />
+    <state width="1323" height="570" key="GridCell.Tab.0.center" timestamp="1652802035497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1652329538378" />
     <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909332" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1652329538378">
+    <state width="1323" height="570" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1652802035497" />
+    <state width="1323" height="570" key="GridCell.Tab.0.left" timestamp="1652802035496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1652329538378" />
     <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909331" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1652329538378">
+    <state width="1323" height="570" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1652802035496" />
+    <state width="1323" height="570" key="GridCell.Tab.0.right" timestamp="1652802035497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1652329538378" />
     <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1652195909332" />
+    <state width="1323" height="570" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1652802035497" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1652329538378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -307,47 +341,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client/gameLogic/Main.java</url>
-          <line>30</line>
+          <line>73</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client/gameLogic/Main.java</url>
-          <line>40</line>
+          <line>83</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client/gameLogic/Main.java</url>
-          <line>37</line>
+          <line>80</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client/gameLogic/Main.java</url>
-          <line>34</line>
+          <line>77</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client/gameLogic/Network.java</url>
-          <line>48</line>
+          <line>50</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client/gameLogic/Network.java</url>
-          <line>99</line>
+          <line>101</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client/gameLogic/Network.java</url>
-          <line>128</line>
+          <line>130</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client/gameLogic/Network.java</url>
-          <line>143</line>
+          <line>145</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client/gameLogic/Network.java</url>
-          <line>162</line>
+          <line>164</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
